@@ -4,12 +4,84 @@ main section#sliderSection {
 }
 
 div#slider {
-    width: 50%;
     margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+header>img {
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+section.content {
+    width: 70%;
+    margin: auto;
+    max-width: 900px;
+}
+
+section.content p {
+    text-indent: 1em;
+}
+
 
 @media only screen and (max-width: 600px) {
     #slider {
-        width: 80%;
+        width: 100%;
     }
+
+    section.content {
+        width: 100%;
+        margin: 10px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    #slider {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    header>img {
+        width: 60%;
+    }
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 33%, 33%, 33%;
+    grid-template-rows: auto, auto;
+    background-color: rgb(197, 195, 195);
+    padding: 20px 0px;
+}
+
+footer address:first-of-type {
+    grid-row: 1;
+    grid-column: 3;
+    text-align: left;
+    color: white;
+}
+
+footer address:last-of-type {
+    grid-row: 2;
+    grid-column: 3;
+    text-align: left;
+    color: white;
+}
+
+footer p {
+    grid-row: 1;
+    grid-column: 1;
+    margin: 0;
+    margin: auto;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(100, 99, 99);
 }
