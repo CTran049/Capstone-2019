@@ -4,12 +4,58 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Hair Styling</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+
+    </style>
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Apply</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">CTSO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sliderSection">
+            <div id="slider">
+                <a onclick="previousButton()" id="prev">&#10094;</a>
+                <a onclick="nextButton()" id="next">&#10095;</a>
+                <div id="imageHolder">
+                    <!-- Insert images here. (No classes or ids need to be added) -->
+                    <img src="photos/hairstyling1.jpg" alt="" />
+                    <img src="photos/hairstyling2.jpg" alt="" />
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1>Hair Styling</h1>
+        </section>
+    </main>
+    <footer>
+        Footer
+    </footer>
 
+    <script src="JavaScript/Slider.js"></script>
+    <script>
+        // Your settings go in here!
+        // Example:
+        setSetting("Auto", true); // The images switch on their own.
+        setSetting("AutoTime", 5); // Set how often the images swtich. (Time in seconds.)
+        setSetting("ArrowColor",
+            "rgba(155, 155, 155, 0.76)"); //Sets the color of the arrows. (They use the same color system as css).
+    </script>
 </body>
 
 </html>

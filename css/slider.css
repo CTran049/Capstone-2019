@@ -1,0 +1,35 @@
+/* 
+    Developer: Ryan
+    Date Developed: 2.13.19
+*/
+
+/* div#slider {
+    width: 60%;
+    margin: auto;
+} */
+
+div#slider a#next,
+div#slider a#prev {
+    position: absolute;
+    z-index: 5;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.5em;
+}
+
+div#slider a#prev {
+    top: 50%;
+    margin-left: 5px;
+}
+
+div#slider a#next {
+    top: 50%;
+    right: 0;
+    margin-right: 5px;
+}
+
+div#slider {
+    position: relative;
+    color: rgba(155, 155, 155, 0.76);
+}

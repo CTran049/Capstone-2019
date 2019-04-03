@@ -1,0 +1,15 @@
+main section#sliderSection {
+    background-color: rgb(207, 207, 207);
+    width: 100%;
+}
+
+div#slider {
+    width: 50%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    #slider {
+        width: 80%;
+    }
+}
