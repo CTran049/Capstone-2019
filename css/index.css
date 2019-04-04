@@ -9,6 +9,11 @@ div#slider {
     padding-bottom: 20px;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 header>img {
     width: 100%;
     margin-bottom: -4px;
